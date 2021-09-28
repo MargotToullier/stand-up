@@ -1,1 +1,35 @@
-/* You can add global styles to this file, and also import other style files */
+@import "tailwindcss/base";
+@import "tailwindcss/components";
+@import "tailwindcss/utilities";
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.project-button {
+  @apply flex items-center px-4 py-2 border shadow-sm font-medium rounded-md text-sm
+}
+
+.color-red {
+  @apply text-white bg-red-400 hover:bg-red-300 border-transparent
+}
+
+.color-yellow {
+  @apply text-white bg-yellow-400 hover:bg-yellow-300 border-transparent
+}
+
+.color-white {
+  @apply text-gray-700 bg-white hover:bg-gray-50 border-gray-300;
+}
+
+.project-label {
+  @apply block font-medium text-gray-700 sm:pt-2 text-sm sm:text-sm;
+}
+
+.status-active {
+  @apply px-2 text-xs leading-5 font-semibold rounded-full bg-green-100 text-green-800 cursor-pointer
+}
+
+.status-inactive {
+  @apply px-2 text-xs leading-5 font-semibold rounded-full bg-red-100 text-red-800 cursor-pointer
+}
